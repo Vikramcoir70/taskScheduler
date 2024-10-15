@@ -41,7 +41,8 @@ def get_tasks():
         'id': task.id,
         'title': task.title,
         'description': task.description,
-        'reminder_time': task.reminder_time.isoformat() if task.reminder_time else None  # noqa
+        'reminder_time': task.reminder_time.isoformat() if task.reminder_time else None,  # noqa
+        'user_id': task.user_id
     } for task in tasks]), 200
 
 
@@ -64,7 +65,8 @@ def get_task(task_id):
         'id': task.id,
         'title': task.title,
         'description': task.description,
-        'reminder_time': task.reminder_time.isoformat() if task.reminder_time else None  # noqa
+        'reminder_time': task.reminder_time.isoformat() if task.reminder_time else None,  # noqa
+        'user_id': task.user_id
     }), 200
 
 
