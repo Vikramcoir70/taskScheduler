@@ -62,6 +62,7 @@ A Flask-based Task Scheduler application that allows users to manage their tasks
   }
 
 ### Get All Task;
+ -Note: Users should only be able to retrieve their own tasks, while admins can retrieve all tasks.
  - **URL**: `GET /api/tasks/`
 ### Update Task:
 - **URL**: `PUT /api/tasks/`
